@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoldShop - Luxury Store</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">GoldShop</div>
+
+  <input type="text" id="search" placeholder="Search products..."/>
+
+  <div class="cart-btn" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Discover Premium Products at Unbeatable Prices</h1>
+  <p>Luxury Gold & White Shopping Experience</p>
+  <button>Shop Now</button>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products"></section>
+
+<!-- CART SIDEBAR -->
+<div class="cart" id="cart">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <h3>Total: $<span id="total">0</span></h3>
+  <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
