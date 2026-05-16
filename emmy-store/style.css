@@ -218,4 +218,4 @@ button.add {
   .products {
     grid-template-columns: repeat(4, 1fr);
   }
-}
+  }
