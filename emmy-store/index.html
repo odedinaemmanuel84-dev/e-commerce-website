@@ -3,43 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GoldShop - Luxury Store</title>
-
-  <link rel="stylesheet" href="style.css"/>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title><title>Luxury Market | Premium E-commerce Platform</title></title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <header>
-  <div class="logo">GoldShop</div>
-
-  <input type="text" id="search" placeholder="Search products..."/>
-
-  <div class="cart-btn" onclick="toggleCart()">
-    🛒 <span id="cart-count">0</span>
-  </div>
+  <div class="logo">Luxury<span>Market</span></div>
+  <input type="text" id="search" placeholder="Search products..." />
 </header>
 
-<!-- HERO -->
+<!-- ⭐ HERO SECTION (NEW) -->
 <section class="hero">
-  <h1>Discover Premium Products at Unbeatable Prices</h1>
-  <p>Luxury Gold & White Shopping Experience</p>
-  <button>Shop Now</button>
+  <h1>Premium Shopping Experience</h1>
+  <p>Discover luxury products with a modern, seamless marketplace experience.</p>
+  <button>Explore Collection</button>
 </section>
 
-<!-- PRODUCTS -->
-<section class="products" id="products"></section>
-
-<!-- CART SIDEBAR -->
-<div class="cart" id="cart">
-  <h2>Your Cart</h2>
-  <div id="cart-items"></div>
-  <h3>Total: $<span id="total">0</span></h3>
-  <button onclick="checkout()">Checkout</button>
+<div class="trust">
+  ✔ Secure UI Demo  •  ✔ Fast Performance  •  ✔ Mobile Optimized
 </div>
+  
+<!-- ⭐ CATEGORIES (NEW) -->
+<section class="categories">
+  <div>📱 Electronics</div>
+  <div>👕 Fashion</div>
+  <div>💄 Beauty</div>
+  <div>🏠 Home</div>
+  <div>🎧 Gadgets</div>
+</section>
+
+<!-- ⭐ FLASH DEALS (NEW) -->
+<section class="flash">
+  <h2>⚡ Flash Deals</h2>
+  <div class="flash-box">
+    🔥 Up to 70% OFF Today Only!
+  </div>
+</section>
+
+<!-- PRODUCTS GRID -->
+<section class="products" id="productList"></section>
+
+<!-- CART PAGE -->
+<section class="cart hidden" id="cartPage">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <div class="cart-total">
+    Total: $<span id="total">0</span>
+  </div>
+</section>
+
+<!-- ACCOUNT PAGE -->
+<section class="account hidden" id="accountPage">
+  <h2>My Account</h2>
+  <p>Login / Register feature coming soon...</p>
+</section>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button onclick="showPage('home')">🏠 Home</button>
+  <button onclick="showPage('account')">👤 Account</button>
+  <button onclick="showPage('cart')">🛒 Cart (<span id="cartCount">0</span>)</button>
+</nav>
 
 <script src="script.js"></script>
 </body>
