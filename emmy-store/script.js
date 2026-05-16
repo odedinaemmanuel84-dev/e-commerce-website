@@ -77,19 +77,24 @@ document.getElementById("search").addEventListener("input", (e) => {
   const filtered = products.filter(p =>
     p.name.toLowerCase().includes(value)
   );
+productList.innerHTML = "";
 
-  productList.innerHTML = "";
-  filtered.forEach(p => {
-    productList.innerHTML += `
-      <div class="product">
-        <img src="${p.img}" />
-        <h4>${p.name}</h4>
-        <p class="price">$${p.price}</p>
-        <button class="add" onclick="addToCart(${p.id})">Add to Cart</button>
-      </div>
-    `;
-  });
-});
+if (filtered.length === 0) {
+  productList.innerHTML = `
+    <div style="
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 40px;
+      color: #777;
+    ">
+      <h3>Product Not Found</h3>
+      <p>Try searching for another product</p>
+    </div>
+  `;
+  return;
+}
+
+filtered.forEach(p => {
 
 displayProducts();
 updateCart();
