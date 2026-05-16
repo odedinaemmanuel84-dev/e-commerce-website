@@ -15,6 +15,7 @@ header {
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -43,6 +44,7 @@ header {
   background-position: center;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
 .hero::before {
@@ -52,7 +54,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.55);
 }
 
 .hero * {
@@ -60,26 +62,24 @@ header {
   z-index: 1;
 }
 
-.trust {
-  text-align: center;
-  font-size: 12px;
-  color: #666;
-  margin-top: 10px;
-}
-
 .hero h1 {
-  font-size: 22px;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .hero p {
-  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #f5f5f5;
 }
 
 .hero button {
   background: #D4AF37;
   border: none;
   padding: 12px 18px;
-  color: #fff;
+  color: #111;
+  font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
@@ -88,6 +88,15 @@ header {
 .hero button:hover {
   background: #b8902e;
   transform: scale(1.05);
+}
+
+/* TRUST LINE */
+.trust {
+  text-align: center;
+  font-size: 12px;
+  color: #f1f1f1;
+  margin-top: 15px;
+  opacity: 0.9;
 }
 
 /* ⭐ CATEGORIES */
@@ -129,8 +138,9 @@ header {
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 15px;
   padding: 10px;
+  padding-bottom: 80px;
 }
 
 .product {
@@ -163,6 +173,7 @@ header {
   font-weight: bold;
 }
 
+/* ADD TO CART BUTTON */
 button.add {
   width: 100%;
   padding: 6px;
@@ -193,6 +204,7 @@ button.add {
   background: #fff;
   border-top: 1px solid #ddd;
   padding: 10px 0;
+  z-index: 1000;
 }
 
 .bottom-nav button {
