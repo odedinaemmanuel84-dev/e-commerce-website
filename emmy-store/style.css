@@ -37,8 +37,27 @@ header {
 /* ⭐ HERO SECTION */
 .hero {
   text-align: center;
-  padding: 25px;
-  background: linear-gradient(135deg, #fff, #fff8e1);
+  padding: 60px 20px;
+  background-image: url("https://images.unsplash.com/photo-1521335629791-ce4aec67dd49?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
 }
 
 .trust {
@@ -57,12 +76,18 @@ header {
 }
 
 .hero button {
-  margin-top: 10px;
-  padding: 10px 15px;
   background: #D4AF37;
   border: none;
+  padding: 12px 18px;
   color: #fff;
   border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #b8902e;
+  transform: scale(1.05);
 }
 
 /* ⭐ CATEGORIES */
