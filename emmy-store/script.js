@@ -45,7 +45,7 @@ const products = [
     id:7,
     name:"Headphones",
     price:110,
-    img:"https://images.unsplash.com/photo-1518441902117-f0a6a8f3d3e3?auto=format&fit=crop&w=800&q=80"
+    img:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
   },
 
   {
