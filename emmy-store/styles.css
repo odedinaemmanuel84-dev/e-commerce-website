@@ -216,3 +216,18 @@ button.add {
     grid-template-columns: repeat(4, 1fr);
   }
   }
+
+/* PRODUCT NOT FOUND */
+.not-found {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.not-found h2 {
+  color: #D4AF37;
+}
+
+.not-found p {
+  color: #777;
+  }
